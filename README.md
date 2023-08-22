@@ -1,15 +1,14 @@
 # Ubi-house Temperature Humidity Measuring Device
 
-This repository contains the Arduino code for the Ubi-House temperature and humidity measuring device. This device is designed to monitor and report environmental conditions and integrates with WordPress to post updates.
+This repository contains the Arduino code for the Ubi-House temperature and humidity measuring device. The device utilizes the ESP8266 microcontroller and the WEMOS SHT3X sensor to monitor environmental conditions. Once measured, the data is sent to a specified WordPress site.
 
 ## Features
 
-- Uses the ESP8266 microcontroller.
-- Connects to WiFi to post data to a WordPress site.
-- Measures temperature in Celsius and Fahrenheit.
-- Measures relative humidity.
-- Provides error logging for ease of debugging.
-
+- **ESP8266 Integration:** Uses the popular ESP8266 microcontroller for WiFi capabilities.
+- **Temperature and Humidity Measurement:** Uses the WEMOS SHT3X sensor to measure both temperature (in Celsius and Fahrenheit) and relative humidity.
+- **WordPress Integration:** Connects to a specified WordPress site to post temperature and humidity data.
+- **Error Logging:** Provides comprehensive error logging for ease of debugging and monitoring.
+  
 ## Hardware Requirements
 
 - ESP8266 WiFi Microcontroller
@@ -28,12 +27,20 @@ This repository contains the Arduino code for the Ubi-House temperature and humi
 1. Clone this repository.
 2. Open the `.ino` file in the Arduino IDE.
 3. Install the required libraries via the Library Manager in the Arduino IDE.
-4. Update the WiFi SSID and PASSWORD in the code with your own credentials.
+4. Update the following in the code with your own credentials:
+   - `WIFI_SSID`
+   - `WIFI_PASSWORD`
+   - `MASTODON_HOST`
+   - `MASTODON_TOKEN`
+   - `serverName` (if using a different domain for the WordPress site)
+   - `your_wordpress_username` (when setting up the authorization for WordPress)
 5. Flash the code to your ESP8266.
 
 ## Usage
 
-Once the device is powered on and connected to the WiFi, it will start measuring temperature and humidity at regular intervals. It will then post this data to the configured WordPress site.
+1. Power on the device.
+2. Once connected to WiFi, the device will start measuring temperature and humidity at regular intervals.
+3. This data will then be sent to the configured WordPress site, creating a new post with the environmental data.
 
 ## Contribution
 
@@ -42,3 +49,4 @@ Feel free to submit issues or pull requests if you'd like to enhance the functio
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
