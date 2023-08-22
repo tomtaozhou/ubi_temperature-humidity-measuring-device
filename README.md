@@ -1,4 +1,4 @@
-# ubi-house_temperature_humidity_measuring_device
+# Ubi-house Temperature Humidity Measuring Device
 
 This repository contains the Arduino code for the Ubi-House temperature and humidity measuring device. This device is designed to monitor and report environmental conditions and integrates with WordPress to post updates.
 
