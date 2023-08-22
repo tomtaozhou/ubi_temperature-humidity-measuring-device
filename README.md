@@ -25,8 +25,8 @@ This repository contains the Arduino code for the Ubi-House temperature and humi
 ## Setup and Installation
 
 1. Clone this repository.
-2. Open the `.ino` file in the Arduino IDE.
-3. Install the required libraries via the Library Manager in the Arduino IDE.
+2. Open the "Ubi-house Temperature Humidity Measuring Device.cpp" file in the Arduino IDE or any other C++ compatible IDE.
+3. Install the required libraries via the Library Manager in the Arduino IDE or any other relevant method if using a different IDE.
 4. Update the following in the code with your own credentials:
    - `WIFI_SSID`
    - `WIFI_PASSWORD`
