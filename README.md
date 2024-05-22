@@ -1,4 +1,4 @@
-# Ubi-house Temperature Humidity Measuring Device
+# Ubi-House Temperature Humidity Measuring Device
 
 This repository contains the Arduino code for the Ubi-House temperature and humidity measuring device. The device utilizes the ESP8266 microcontroller and the WEMOS SHT3X sensor to monitor environmental conditions. Once measured, the data is sent to a specified WordPress site.
 
